@@ -1,0 +1,58 @@
+@import './styles/theme.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  color: var(--text-primary);
+  background: var(--bg-light);
+}
+
+@keyframes pulse-dot {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+.pulse-dot {
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+.code-block {
+  background: #1e293b;
+  color: #e2e8f0;
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.code-block .keyword {
+  color: #c084fc;
+}
+
+.code-block .string {
+  color: #86efac;
+}
+
+.code-block .comment {
+  color: #64748b;
+}
+
+.code-block .function {
+  color: #60a5fa;
+}
+
+.code-block .number {
+  color: #fbbf24;
+}
